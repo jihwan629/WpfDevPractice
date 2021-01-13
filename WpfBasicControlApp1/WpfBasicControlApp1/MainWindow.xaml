@@ -20,12 +20,68 @@
         <PasswordBox Password="Secret"/>-->
 
         
-        <!--Multimedia Contro--><!--
+        <!--Multimedia Control--><!--
         
         <Image Source="Resources/Img0.png" Height="200" />
         
         --><!--동영상 파일 설정 > 출력 디렉토리 > 새버전이면 복사--><!--
         <MediaElement Source="Resources/Media0.avi" Height="200"/>-->
         
+        
+        <!--Content Control-->
+
+        <!--<Button Content="Un button" />
+        
+        <ToggleButton Content="ToggleButton"/>
+        
+        <CheckBox Content="CheckBox"/>
+        
+        <RadioButton Content="RadioButton"/>
+
+        <Button Padding="10">
+            <MediaElement Source="Resources/Media0.avi" 
+                          Height="50" />
+        </Button>
+
+        <Button Width="100">
+            <CheckBox>
+                <TextBlock
+                    Text="Avec un retour a la ligme"
+                    TextWrapping="Wrap" />
+            </CheckBox>
+        </Button>
+
+        <Border Background="Orange"
+                CornerRadius="10" Padding="5">
+            <Button Content="un button"/>
+        </Border>
+
+        <Border Background="Blue"
+                CornerRadius="10, 0, 10, 0" Padding="5">
+            <Button Content="un button"/>
+        </Border>
+
+        <ScrollViewer Height="100" Width="100"
+                      HorizontalScrollBarVisibility="Auto">
+            <MediaElement Source="Resources/Media0.avi" 
+                          Stretch="None"/>
+        </ScrollViewer>-->
+
+        
+        <Grid Height="60" Width="100" Background="LightBlue">
+            <Button Content="A"/>
+        </Grid>
+
+        <Grid Height="60" Width="100" Background="LightBlue">
+            <Viewbox>
+                <Button Content="A"/>
+            </Viewbox>
+        </Grid>
+
+        <Grid Height="60" Width="100" Background="LightBlue">
+            <Viewbox Stretch="Fill">
+                <Button Content="A"/>
+            </Viewbox>
+        </Grid>
     </StackPanel>
 </Window>
