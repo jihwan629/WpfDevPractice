@@ -68,7 +68,7 @@
         </ScrollViewer>-->
 
         
-        <Grid Height="60" Width="100" Background="LightBlue">
+        <!--<Grid Height="60" Width="100" Background="LightBlue">
             <Button Content="A"/>
         </Grid>
 
@@ -82,6 +82,102 @@
             <Viewbox Stretch="Fill">
                 <Button Content="A"/>
             </Viewbox>
+        </Grid>-->
+        
+        
+        
+        <!--Pannel Control-->
+
+        <Canvas Width="50" Height="50" Background="Orange">
+            <Button Content="Hello World" Margin="5"/>
+        </Canvas>
+
+        <Grid Width="50" Height="50" Background="Orange">
+            <Button Content="Hello World" Margin="5"/>
         </Grid>
+
+        <Canvas>
+            <Button Canvas.Top="0" Canvas.Left="0">A</Button>
+            <Button Canvas.Top="25" Canvas.Left="0">B</Button>
+            <Button Canvas.Top="25" Canvas.Left="25">C</Button>
+            <Button Canvas.Top="0" Canvas.Left="50">D</Button>
+        </Canvas>
+
+        <StackPanel Orientation="Vertical">
+            <Button>A</Button>
+            <Button>B</Button>
+            <Button>C</Button>
+            <Button>D</Button>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <Button>A</Button>
+            <Button>B</Button>
+            <Button>C</Button>
+            <Button>D</Button>
+        </StackPanel>
+
+        <DockPanel>
+            <Button DockPanel.Dock="Left">
+                Left
+            </Button>
+            <Button DockPanel.Dock="Right">
+                Left
+            </Button>
+            <Button DockPanel.Dock="Top">
+                Left
+            </Button>
+            <Button>
+                Takes what's left
+            </Button>
+        </DockPanel>
+
+        <WrapPanel>
+            <Button>A</Button>
+            <Button>B</Button>
+            <Button>C</Button>
+            <Button>D</Button>
+        </WrapPanel>
+
+        <UniformGrid HorizontalAlignment="Center">
+            <Label>Name</Label>
+            <TextBox Width="70"/>
+            <Label>Age</Label>
+            <ComboBox/>
+        </UniformGrid>
+
+        <Grid Width="200" Height="100">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Button Grid.Row="0"
+                    Grid.Column="0">Button A</Button>
+            <Button Grid.Row="1"
+                    Grid.Column="0">Button B</Button>
+            <Button Grid.Row="1"
+                    Grid.Column="1">Button C</Button>
+            <Button Grid.Row="0"
+                    Grid.Column="1">Button C</Button>
+        </Grid>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0">0</Button>
+            <Button Grid.Column="1">1</Button>
+            <Button Grid.Column="2">2</Button>
+        </Grid>
+
     </StackPanel>
 </Window>
