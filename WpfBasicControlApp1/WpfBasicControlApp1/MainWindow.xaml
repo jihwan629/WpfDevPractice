@@ -88,7 +88,7 @@
         
         <!--Pannel Control-->
 
-        <Canvas Width="50" Height="50" Background="Orange">
+        <!--<Canvas Width="50" Height="50" Background="Orange">
             <Button Content="Hello World" Margin="5"/>
         </Canvas>
 
@@ -177,7 +177,26 @@
             <Button Grid.Column="0">0</Button>
             <Button Grid.Column="1">1</Button>
             <Button Grid.Column="2">2</Button>
-        </Grid>
+        </Grid>-->
+        
+        
+        <!--List Control-->
+
+        <ListBox Height="100">
+            <Label>Element1</Label>
+            <Label>Element2</Label>
+            <GroupBox Header="Element3">
+                With some content it's funnier
+            </GroupBox>
+        </ListBox>
+
+        <ComboBox>
+            <Label>Element1</Label>
+            <Label>Element2</Label>
+            <GroupBox Header="Element3">
+                With some content it's funnier
+            </GroupBox>
+        </ComboBox>
 
     </StackPanel>
 </Window>
