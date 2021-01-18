@@ -10,7 +10,7 @@
       Title="Menu">
 
     <Grid>
-        <Button x:Name="ProductsBtn" Content="Products" Margin="10,65,0,0" VerticalAlignment="Top" Height="45" HorizontalAlignment="Left" Width="90"/>
+        <Button x:Name="ProductsBtn" Content="Products" Margin="10,65,0,0" VerticalAlignment="Top" Height="45" HorizontalAlignment="Left" Width="90" Click="ProductsBtn_Click"/>
         <Button x:Name="LiveSupportBtn" Content="Live Support" Margin="105,65,0,0" VerticalAlignment="Top" Height="45" HorizontalAlignment="Left" Width="90" Click="LiveSupportBtn_Click"/>
         <Button x:Name="EmailSupportBtn" Content="Email Support" Margin="200,65,0,0" VerticalAlignment="Top" Height="45" Click="EmailSupportBtn_Click" HorizontalAlignment="Left" Width="90" />
         <TextBlock x:Name="textBlock" Margin="10,119,0,10" TextWrapping="Wrap" Text="Advecture Work" FontSize="24" FontStyle="Italic" HorizontalAlignment="Left" Width="280"/>
