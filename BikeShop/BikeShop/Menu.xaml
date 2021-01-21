@@ -9,6 +9,26 @@
       Title="Menu"
       Background="{StaticResource background}">
 
+    <Page.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Ellipse Fill="#AA000000"
+                                 Margin="10, 10, 0, 0"/>
+                            <Ellipse Fill="{TemplateBinding Background}"
+                                 Margin="0, 0, 10, 10"/>
+                            <Viewbox Margin="5, 5, 15, 15">
+                                <ContentPresenter/>
+                            </Viewbox>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+
     <Grid>
         <Button x:Name="ProductsBtn" Content="Products" Margin="10,65,0,0" VerticalAlignment="Top" Height="45" HorizontalAlignment="Left" Width="90" Click="ProductsBtn_Click"/>
         <Button x:Name="LiveSupportBtn" Content="Live Support" Margin="105,65,0,0" VerticalAlignment="Top" Height="45" HorizontalAlignment="Left" Width="90" Click="LiveSupportBtn_Click"/>
