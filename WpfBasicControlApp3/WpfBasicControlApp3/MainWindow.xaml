@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Press me" Background="GreenYellow">
+        <!--<Button Content="Press me" Background="GreenYellow">
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
-                    <!--<Ellipse Fill="GreenYellow"
-                                 Width="100" Height="100"/>-->
+                    --><!--<Ellipse Fill="GreenYellow"
+                                 Width="100" Height="100"/>--><!--
                     <Grid>
                         <Ellipse Fill="{TemplateBinding Background}"
                                  Width="100" Height="100"/>
@@ -22,10 +22,28 @@
                     
                 </ControlTemplate>
             </Button.Template>
-        </Button>
+        </Button>-->
 
-        <Label Content="{StaticResource button}"
-               Background="{StaticResource accentBrush}"/>
+        <!--<Label Content="{StaticResource button}"
+               Background="{StaticResource accentBrush}"/>-->
 
+        <StackPanel Margin="50">
+            <Button Style="{StaticResource niceButton}">
+                A
+            </Button>
+
+            <Button>
+                B
+            </Button>
+
+            <Button Style="{StaticResource niceButton}">
+                C
+            </Button>
+
+            <Button Style="{StaticResource niceButton}">
+                D
+            </Button>
+        </StackPanel>
+        
     </Grid>
 </Window>
