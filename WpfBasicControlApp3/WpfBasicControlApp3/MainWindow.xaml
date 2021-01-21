@@ -23,6 +23,9 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-                
+
+        <Label Content="{StaticResource button}"
+               Background="{StaticResource accentBrush}"/>
+
     </Grid>
 </Window>
