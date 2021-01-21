@@ -7,11 +7,19 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Press me">
+        <Button Content="Press me" Background="GreenYellow">
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
-                    <Ellipse Fill="GreenYellow"
-                             Width="100" Height="100"/>
+                    <!--<Ellipse Fill="GreenYellow"
+                                 Width="100" Height="100"/>-->
+                    <Grid>
+                        <Ellipse Fill="{TemplateBinding Background}"
+                                 Width="100" Height="100"/>
+                        <Label Content="{TemplateBinding Content}"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"/>
+                    </Grid>
+                    
                 </ControlTemplate>
             </Button.Template>
         </Button>
